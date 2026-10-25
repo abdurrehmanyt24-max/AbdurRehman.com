@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AbdurRehman – Coder and Future Scientist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+      --ink:#1E2A78; --deep:#121A4D; --teal:#00B8A9; --sun:#FFC93C;
+          --coral:#FF6B6B; --violet:#7C4DFF; --paper:#F6F8FF; --text:#1d2340;
+            }
+              *{box-sizing:border-box;margin:0;padding:0}
+                html{scroll-behavior:smooth}
+                  body{font-family:'Nunito',system-ui,Arial,sans-serif;color:var(--text);background:var(--paper);line-height:1.65}
+                    h1,h2,h3{font-family:'Sora',system-ui,Arial,sans-serif;line-height:1.15}
+                      .wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+
+                        /* HERO */
+                          .hero{background:linear-gradient(135deg,var(--ink),var(--violet));color:#fff;padding:72px 0}
+                            .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}
+                              .hero h1{font-size:clamp(2.4rem,8vw,4.2rem);font-weight:800}
+                                .hero p.lead{margin-top:16px;font-size:1.15rem;max-width:36ch}
+                                  .pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+                                    .pill{padding:8px 16px;border-radius:999px;font-weight:700;font-size:.95rem;color:var(--deep)}
+                                      .pill.a{background:var(--sun)} .pill.b{background:var(--teal)} .pill.c{background:var(--coral)}
+
+                                        /* CODE CARD */
+                                          .code{background:var(--deep);border-radius:16px;padding:20px 22px;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+                                            .dots{display:flex;gap:7px;margin-bottom:14px}
+                                              .dots i{width:12px;height:12px;border-radius:50%;display:block}
+                                                .dots i:nth-child(1){background:var(--coral)} .dots i:nth-child(2){background:var(--sun)} .dots i:nth-child(3){background:var(--teal)}
+                                                  pre{font-family:Consolas,Menlo,monospace;font-size:.95rem;color:#dfe5ff;white-space:pre-wrap;line-height:1.7}
+                                                    .k{color:var(--coral)} .s{color:var(--sun)} .n{color:var(--teal)}
+                                                      .cursor{display:inline-block;width:8px;height:1em;background:var(--teal);vertical-align:-2px;animation:blink 1s steps(2) infinite}
+                                                        @keyframes blink{50%{opacity:0}}
+
+                                                          /* SECTIONS */
+                                                            section{padding:64px 0}
+                                                              h2{font-size:clamp(1.6rem,4vw,2.2rem);color:var(--ink);margin-bottom:20px}
+                                                                .about p{max-width:65ch;font-size:1.1rem}
+
+                                                                  /* QUALITIES */
+                                                                    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
+                                                                      .card{background:#fff;border-radius:14px;padding:22px;border-top:6px solid var(--c);box-shadow:0 6px 18px rgba(30,42,120,.08)}
+                                                                        .card .emoji{font-size:2rem}
+                                                                          .card h3{margin:10px 0 6px;font-size:1.1rem;color:var(--ink)}
+                                                                            .card p{font-size:.98rem}
+
+                                                                              /* ROADMAP */
+                                                                                .road{border-left:4px solid var(--violet);margin-left:10px;padding-left:26px;display:grid;gap:26px}
+                                                                                  .step{position:relative}
+                                                                                    .step::before{content:"";position:absolute;left:-37px;top:4px;width:18px;height:18px;border-radius:50%;background:var(--c);border:4px solid var(--paper)}
+                                                                                      .step b{font-family:'Sora',sans-serif;color:var(--c);font-size:1.05rem}
+                                                                                        .step p{margin-top:2px}
+
+                                                                                          footer{background:var(--deep);color:#cfd6ff;text-align:center;padding:28px 20px}
+                                                                                            footer strong{color:var(--sun)}
+
+                                                                                              @media (max-width:760px){
+                                                                                                  .hero{padding:48px 0}
+                                                                                                      .hero .wrap{grid-template-columns:1fr}
+                                                                                                          section{padding:44px 0}
+                                                                                                            }
+                                                                                                              :focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+                                                                                                                @media (prefers-reduced-motion:reduce){.cursor{animation:none} html{scroll-behavior:auto}}
+                                                                                                                </style>
+                                                                                                                </head>
+                                                                                                                <body>
+
+                                                                                                                <!-- HERO -->
+                                                                                                                <header class="hero">
+                                                                                                                  <div class="wrap">
+                                                                                                                      <div>
+                                                                                                                            <h1>AbdurRehman</h1>
+                                                                                                                                  <p class="lead">I write code today so I can make discoveries tomorrow.</p>
+                                                                                                                                        <div class="pills">
+                                                                                                                                                <span class="pill a">Learning coding</span>
+                                                                                                                                                        <span class="pill b">Future scientist</span>
+                                                                                                                                                                <span class="pill c">Always curious</span>
+                                                                                                                                                                      </div>
+                                                                                                                                                                          </div>
+                                                                                                                                                                              <div class="code" aria-label="A small code snippet about AbdurRehman">
+                                                                                                                                                                                    <div class="dots"><i></i><i></i><i></i></div>
+                                                                                                                                                                                    <pre><span class="k">const</span> me = {
+                                                                                                                                                                                      name: <span class="s">"AbdurRehman"</span>,
+                                                                                                                                                                                        learning: <span class="s">"coding"</span>,
+                                                                                                                                                                                          dream: <span class="s">"scientist"</span>,
+                                                                                                                                                                                            neverGivesUp: <span class="n">true</span>
+                                                                                                                                                                                            };<span class="cursor"></span></pre>
+                                                                                                                                                                                                </div>
+                                                                                                                                                                                                  </div>                                                                                                                                                                        </header>
+
+                                                                                                                                                                                                  <main>
+                                                                                                                                                                                                    <!-- ABOUT (change this text to your own words) -->
+                                                                                                                                                                                                      <section class="about">
+                                                                                                                                                                                                          <div class="wrap">
+                                                                                                                                                                                                                <h2>About me</h2>
+                                                                                                                                                                                                                      <p>Hi, I’m AbdurRehman. I’m learning coding step by step, and my big dream is to become a scientist. I like to ask “why?” and keep trying until I understand. I learn by myself, and every day I try to get a little better than yesterday.</p>
+                                                                                                                                                                                                                          </div>
+                                                                                                                                                                                                                            </section>
+
+                                                                                                                                                                                                                              <!-- SPECIAL QUALITIES (edit titles and text) -->
+                                                                                                                                                                                                                                <section>
+                                                                                                                                                                                                                                    <div class="wrap">
+                                                                                                                                                                                                                                          <h2>My special qualities</h2>
+                                                                                                                                                                                                                                                <div class="grid">
+                                                                                                                                                                                                                                                        <div class="card" style="--c:var(--teal)"><div class="emoji">🔍</div><h3>Curious mind</h3><p>I love finding out how things work.</p></div>
+                                                                                                                                                                                                                                                                <div class="card" style="--c:var(--sun)"><div class="emoji">💻</div><h3>Coder in the making</h3><p>I practise coding and build small projects.</p></div>
+                                                                                                                                                                                                                                                                        <div class="card" style="--c:var(--coral)"><div class="emoji">💪</div><h3>Never gives up</h3><p>When something is hard, I try again.</p></div>
+                                                                                                                                                                                                                                                                                <div class="card" style="--c:var(--violet)"><div class="emoji">📚</div><h3>Self-learner</h3><p>I study on my own and enjoy learning new things.</p></div>
+                                                                                                                                                                                                                                                                                      </div>
+                                                                                                                                                                                                                                                                                          </div>
+                                                                                                                                                                                                                                                                                            </section>
+
+                                                                                                                                                                                                                                                                                              <!-- ROADMAP -->
+                                                                                                                                                                                                                                                                                                <section>
+                                                                                                                                                                                                                                                                                                    <div class="wrap">
+                                                                                                                                                                                                                                                                                                          <h2>My journey to becoming a scientist</h2>
+                                                                                                                                                                                                                                                                                                                <div class="road">
+                                                                                                                                                                                                                                                                                                                        <div class="step" style="--c:var(--teal)"><b>Now</b><p>Learning coding, like HTML and Python.</p></div>
+                                                                                                                                                                                                                                                                                                                                <div class="step" style="--c:var(--sun)"><b>Next</b><p>Building projects and my own website.</p></div>
+                                                                                                                                                                                                                                                                                                                                        <div class="step" style="--c:var(--coral)"><b>Later</b><p>Learning maths and science deeply.</p></div>
+                                                                                                                                                                                                                                                                                                                                                <div class="step" style="--c:var(--violet)"><b>Goal</b><p>Becoming a scientist and helping the world.</p></div>
+                                                                                                                                                                                                                                                                                                                                                      </div>
+                                                                                                                                                                                                                                                                                                                                                          </div>
+                                                                                                                                                                                                                                                                                                                                                            </section>
+                                                                                                                                                                                                                                                                                                                                                            </main>
+
+                                                                                                                                                                                                                                                                                                                                                            <footer>
+                                                                                                                                                                                                                                                                                                                                                              <p>Created by <strong>AbdurRehman</strong></p>
+                                                                                                                                                                                                                                                                                                                                                              </footer>
+
+                                                                                                                                                                                                                                                                                                                                                              </body>
+                                                                                                                                                                                                                                                                                                                                                              </html>
+                                                                                                                                                                                                                                                                                                                                                              
